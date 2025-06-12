@@ -5,6 +5,7 @@
 - **Output:** Analog voltage proportional to magnetic field intensity  
 - **Magnet:** Neodymium magnet mounted on moving platform  
 - **Input Pin on TMS320:** ADCIN3 (mapped to J3.26)  
+
 ![image](https://github.com/user-attachments/assets/91ca8396-f56f-4046-90fb-43ca75fadc04)
 
 
@@ -34,4 +35,9 @@
 
 1. Open CCS and import this project.
 2. Ensure you link `C2000Ware` in your project's properties:
+
+![Screenshot 2025-06-12 154853](https://github.com/user-attachments/assets/b9639c03-d400-4df1-a79c-0fc89abe9439)
+
+![image](https://github.com/user-attachments/assets/6acafe46-d9ae-4a99-880c-cf2291f071c6)
+
 
