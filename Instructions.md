@@ -1,18 +1,28 @@
-# Wiring Instructions
+### Hardware Setup
 
-### Thermistor Setup (Creality hotbed NTC 100k):
+- **Sensor Used:** Linear analog Hall-effect sensor  
+- **Supply Voltage:** 5V (compatible with ADC range)  
+- **Output:** Analog voltage proportional to magnetic field intensity  
+- **Magnet:** Neodymium magnet mounted on moving platform  
+- **Input Pin on TMS320:** ADCIN3 (mapped to J3.26)  
+![image](https://github.com/user-attachments/assets/91ca8396-f56f-4046-90fb-43ca75fadc04)
 
-- Connect one side of thermistor to **3.3V**
-- Other side to a voltage divider node (10k resistor to GND)
-- Tap the center to **ADCINA0** (pin J3.30 on LaunchPad)
 
-### SCI Communication
+### Basic Wiring
 
-- SCITXDA: GPIO43 (J1.9)
-- SCIRXDA: GPIO42 (J1.10)
-- Connect TX to RX of USB-UART module and vice versa
+| Sensor Pin | Connected To              |
+|------------|---------------------------|
+| VCC        | 3.3V                      |
+| GND        | GND                       |
+| OUT        | ADCIN3 (GPIO32 / J1.6)    |
 
-# Build Instructions for TMS320F28379D Thermistor Project
+
+![image](https://github.com/user-attachments/assets/95e318fd-8dff-422d-a2bb-10fc6581101b)
+
+![image](https://github.com/user-attachments/assets/448f9cc5-c843-43f6-8aff-1096ccc129a6)
+
+
+# Build Instructions for TMS320F28379D 
 
 ### Requirements
 
